@@ -102,7 +102,7 @@ La POO est un paradigme ! Il s'agit d'une façon de concevoir un programme.
 
 En POO le concept incontournable et l'élément de base est : la classe.
 
-Il s'agit d'un structure de données, qui a :
+Il s'agit d'une structure de données, qui a :
 * des variables membres, on parle d'attributs ;
 * des fonctions membres, on parle de méthodes.
 
@@ -140,7 +140,7 @@ class Character {
 Revenons sur plusieurs points :
 * Une autre convention est : de nommer la déclaration de notre classe dans un fichier nommé *NomDeMaClasse.h*. De même la définition sera dans un fichier nommé *NomDeMaClasse.cpp*.
 * Dans un projet plus complexe vous aurez sûrement besoin d'utiliser une classe dans plusieurs classes. Ainsi il est nécessaire de mettre des gardes fou grâce au instruction `ifndef`, `define` et `endif`.
-* Avant la déclaration des attributs, il y a le mot-clé `private`. Cela signifie que les attributs sont ici privée. En programmation orienté objet, peu importe le langage, les attributs doivent être privée afin de respecter l'encapsulation. Ce mécanisme consiste à rendre les attributs inacessible en dehors des méthodes de la classe. Ceci dans le but de contrôler les données. Je ne vais pas m'étandre mais sacher que pour lire ou modifier les attributs de la classes on utilise des accesseurs (getter en anglais) et des mutateurs (setter dans la langue de Shakespeare). Les accesseurs et mutateurs ne sont rien d'autres que des méthodes.
+* Avant la déclaration des attributs, il y a le mot-clé `private`. Cela signifie que les attributs sont ici privée. En programmation orienté objet, peu importe le langage, les attributs doivent être privée afin de respecter l'encapsulation. Ce mécanisme consiste à rendre les attributs inacessible en dehors des méthodes de la classe. Ceci dans le but de contrôler les données. Je ne vais pas m'étandre mais sachez que pour lire ou modifier les attributs de la classes on utilise des accesseurs (getter en anglais) et des mutateurs (setter dans la langue de Shakespeare). Les accesseurs et mutateurs ne sont rien d'autres que des méthodes.
 * Le mot-clé `public` avant les méthodes indique que ces dernières peuvent être appelé dans une autre partie du code (programme principale par exemple).
 * Les méthodes sont comme les fonctions, elles ont un type de retour, ici *void* ! Dans notre cas, nos méthodes ne retournant aucune valeur.
 * Vous avez sûrement remarqué qu'il y a une méthode particulière qui a le même nom que notre classe. Il s'agit d'un constructeur. Quand vous utilisez une classe, il faut l'instancier, créer un objet. C'est grâce au constructeur que vous allez réaliser l'instanciation.
@@ -200,7 +200,7 @@ void Character::paint() {
 
 Quelques précisions :
 * Dans la définition d'une classe il faut importer sa déclaration, grâce au mot-clé `include`.
-* Le constructeur initalise les attributs de la classe. Le C++ possède un sucre syntaxique qui permet d'initialiser les attributs très simplements comme vous pouvez le voir, dans le commentaire dans le code.
+* Le constructeur initalise les attributs de la classe. Le C++ possède un sucre syntaxique qui permet d'initialiser les attributs très simplements comme vous pouvez le voir. Dans le commentaire dans le code, vous avez un constructeur équivalent.
 * C'est quoi this ? Il s'agit d'un pointeur sur l'objet courant. Cela permet d'accéder dans la définition de la classe aux différents membres (attributs et méthodes) de cette classe.
 * Pourquoi préfixer nos méthodes par `NomDeMaClasse::` ? Il s'agit d'une spécificité du C++, pensez-y sans quoi vous aurrez une erreur de compilation.
 
